@@ -18,13 +18,7 @@
         "web"
       ],
       "servers": [
-        "java",
-        "node",
-        "php",
-        "python",
-        "ruby",
-        "dotnet",
-        "go"
+        "node"
       ]
     }
   ]
