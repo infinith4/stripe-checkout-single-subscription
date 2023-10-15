@@ -19,7 +19,7 @@ const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY, {
 });
 
 app.use(express.static(process.env.STATIC_DIR));
-app.use(express.urlencoded());
+app.use(express.urlencoded({extended:true}));
 app.use(
   express.json({
     // We need the raw body to verify webhook signatures.
@@ -144,4 +144,4 @@ app.post("/webhook", async (req, res) => {
   res.sendStatus(200);
 });
 
-app.listen(4242, () => console.log(`Node server listening at http://localhost:${4242}/`));
+app.listen(3300, () => console.log(`Node server listening at http://localhost:${3300}/`));

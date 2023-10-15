@@ -184,7 +184,7 @@ You can use the Stripe CLI to easily spin up a local webhook.
 First [install the CLI](https://stripe.com/docs/stripe-cli) and [link your Stripe account](https://stripe.com/docs/stripe-cli#link-account).
 
 ```sh
-./stripe listen --forward-to "localhost:4242/webhook"
+./stripe listen --forward-to "localhost:3300/webhook"
 ```
 
 The CLI will print a webhook secret key to the console. Set `STRIPE_WEBHOOK_SECRET` to this value in your `.env` file.
